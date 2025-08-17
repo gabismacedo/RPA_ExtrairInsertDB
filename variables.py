@@ -10,7 +10,7 @@ config.read('auth.ini')
 login = config["INFOB2B"]['login']
 senha = config["INFOB2B"]['senha']
 # driver = webdriver.Chrome(service=web)
-url_portal = "https://www.portalinfob2b.com.br/"
+url_portal = "https://site-que-vai-acessar.com/"
 
 options = webdriver.ChromeOptions()
 options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36")

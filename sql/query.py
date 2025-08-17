@@ -17,11 +17,11 @@ cursor = conectar29().cursor()
 
 def manipulacaoExcel():
     # encontrar pasta que está o excel
-    caminho_pasta = "C:/Users/40417495/OneDrive - Telefonica/projetos/RPA/RPA_EXTRACAO_INFOB2B"
+    caminho_pasta = "C:/Users/projetos/RPA/RPA_EXTRACAO_INFOB2B"
     lista_arquivos = os.listdir(caminho_pasta) # lista todos os arquivos dentro da pasta
 
-    # cria uma lista com todos os arquivos que contém o nome RelatorioInfoB2B_
-    arquivos = [file for file in lista_arquivos if file.startswith("RelatorioInfoB2B_")]
+    # cria uma lista com todos os arquivos que contém o nome do arquivo_
+    arquivos = [file for file in lista_arquivos if file.startswith("nome_arquivo_")]
     
     for arquivo in arquivos:
         caminho_completo_arquivo = os.path.join(caminho_pasta, arquivo) # uni o caminho da pasta, com o nome completo do arquivo

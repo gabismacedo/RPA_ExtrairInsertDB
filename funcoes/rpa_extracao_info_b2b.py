@@ -8,13 +8,13 @@ from sql.query import *
 
 
 def rpa_extracao_info_b2b():
-    # solve_text_captcha(driver, url_portal)
-    # login_portal()
-    # entrar_relatorio()
-    # reCaptcha_solver()
-    # preencher_campos()
-    # filtro_hierarquia()
-    # mover_arquivo_baixado()
+    solve_text_captcha(driver, url_portal)
+    login_portal()
+    entrar_relatorio()
+    reCaptcha_solver()
+    preencher_campos()
+    filtro_hierarquia()
+    mover_arquivo_baixado()
     conectar29()
     manipulacaoExcel()
 

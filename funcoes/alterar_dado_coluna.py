@@ -1,8 +1,7 @@
 import pandas as pd
 import os
 
-pasta_destino = 'C:/Users/40417495/Telefonica/GERENCIA DE PROJETOS E EXPERIÊNCIA COMERCIAL - Documentos/001. ' \
-                       'Eficiência Jurídica e Ecossistemas/008. BASE PBI/Relatórios gerados portal InfoB2B'
+pasta_destino = 'C:/Users/Documentos/pasta_destino'
 
 def tranformar_texto_numero(caminho_pasta, nome_coluna):
     df = pd.read_excel(caminho_pasta)

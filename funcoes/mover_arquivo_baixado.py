@@ -8,7 +8,7 @@ def mover_arquivo_baixado():
     pasta_baixado = os.path.expanduser('~/Downloads')
 
     # NOME INICIAL DO ARQUIVO E SUA EXTENSÃO
-    nome_pasta = 'InfoB2B_*.zip'
+    nome_pasta = 'arquivo_*.zip'
 
     # ENCONTRA TODOS OS ARQUIVOS NA PASTA DOWNLOAD COM O NOME "InfoB2B_"
     encontrar_arquivos = glob.glob(os.path.join(pasta_baixado, nome_pasta))
@@ -22,7 +22,7 @@ def mover_arquivo_baixado():
         # SELECIONA O ARQUIVO MAIS RECENTE
         arquivo_recente = max(encontrar_arquivos, key=os.path.getctime)
         # PASTA ONDE O ARQUIVO SERÁ MOVIDO
-        pasta_destino = 'C:/Users/40417495/OneDrive - Telefonica/projetos/RPA/RPA_EXTRACAO_INFOB2B'
+        pasta_destino = 'C:/Users/projetos/RPA/RPA_EXTRACAO_INFOB2B'
         nome_arquivo = os.path.basename(arquivo_recente)
         destino = os.path.join(pasta_destino, nome_arquivo)
         # MOVE ARQUIVO PARA O NOVO DIRETÓRIO
